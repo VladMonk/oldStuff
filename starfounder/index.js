@@ -17,7 +17,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-//непонятно на ху я это надо
 require("./assets/config/jwt-setup")(passport);
 
 //turn ejs(disable after angular inject)
