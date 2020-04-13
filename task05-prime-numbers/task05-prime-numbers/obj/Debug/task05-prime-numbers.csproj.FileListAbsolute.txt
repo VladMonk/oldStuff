@@ -1,0 +1,5 @@
+/Users/home/Projects/task05-prime-numbers/task05-prime-numbers/bin/Debug/task05-prime-numbers.exe
+/Users/home/Projects/task05-prime-numbers/task05-prime-numbers/bin/Debug/task05-prime-numbers.pdb
+/Users/home/Projects/task05-prime-numbers/task05-prime-numbers/obj/Debug/task05-prime-numbers.csprojAssemblyReference.cache
+/Users/home/Projects/task05-prime-numbers/task05-prime-numbers/obj/Debug/task05-prime-numbers.exe
+/Users/home/Projects/task05-prime-numbers/task05-prime-numbers/obj/Debug/task05-prime-numbers.pdb

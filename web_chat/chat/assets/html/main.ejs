@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>EasyBreazyChat</title>
+    <link href="/style/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/img/favicons/favicon.ico">
+
+
+
+    <link rel="stylesheet" href="/style/cover.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+</head>
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">EasyBreazyChat</h3>
+
+      <nav class="nav nav-masthead justify-content-center">
+        <div class="img_cont_msg">
+          <img src=<%= user.userphoto %> class="rounded-circle user_img_msg">
+        </div>
+        <div class="user_cotainer_head">
+          <h7><%= user.username %></h7>
+        </div>
+        <a class="nav-link active" href="#">Chat</a>
+        <a class="nav-link" href="/auth/login">Log out</a>
+
+      </nav>
+    </div>
+  </header>
+  <main role="main" class="inner cover">
+
+
+
+    <div class="container-fluid h-100">
+			<div class="row justify-content-center h-10">
+        <div class="col-md-8 col-xl-6 chat">
+          <div class="card">
+            <div id="msg_form" class="card-body msg_card_body"></div>
+            <div  class="card-footer">
+
+              <div  class="input-group">
+                <form id="msg_form_to_send" class="input-group">
+                <textarea id="input_text" name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+
+                <div class="input-group-append">
+                  <input type="submit" name="" value="" >
+                  <span name = "button" class="input-group-text send_btn" > <i class="fas fa-location-arrow"></i></span>
+                </div>
+                </form>
+              </div>
+
+            </div>
+            </div>
+          </div>
+  			</div>
+  		</div>
+  </main>
+  <footer class="mastfoot mt-auto">
+    <div class="credits">
+      <p>Create special for <a href="https://itransition.by/"><img src="/img/favicons/itransition_logo.png" width = "90" height = "11"></a> by <a href="https://vk.com/gremmygrown">gg</a>.</p>
+    </div>
+  </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  $(function(){
+    var socket = io.connect();
+    var $msg_send = $("#msg_form_to_send");
+    var $inputText = $("#input_text");
+    var $all_msg = $("#msg_form");
+
+    $msg_send.submit(function(click){
+      click.preventDefault();
+      //socket.emit("send_message", $inputText.val(), socket.id);
+      socket.emit("send_message", $inputText.val(), "<%= user.googleid%>", "<%= user.username%>", "<%= user.userphoto%>");
+      $inputText.val("");
+    });
+
+    socket.on("add_message", function(msg_content){
+      if(<%= user.googleid%> == msg_content.id){
+        $all_msg.append("<div class='d-flex justify-content-end mb-4'><div class='msg_cotainer_send'>" + msg_content.msg + "</div></div>");
+      }else{
+        $all_msg.append("<div class='d-flex justify-content-start mb-4'><div class='img_cont_msg'><img src='" + msg_content.photo + "' class='rounded-circle user_img_msg'></div><div class='msg_cotainer'>" + msg_content.msg +"<span class='msg_time'>" + msg_content.name + "</span></div></div>");
+      }
+    });
+
+  });
+</script>
+</body>
+</html>

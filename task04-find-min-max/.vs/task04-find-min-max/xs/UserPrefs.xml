@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{7FE14B20-6592-41CC-BF91-681E5D7D7866}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="task04-find-min-max/Program.cs">
+    <Files>
+      <File FileName="task04-find-min-max/Program.cs" Line="131" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.task04-find-min-max PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

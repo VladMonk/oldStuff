@@ -1,0 +1,36 @@
+<app-header></app-header>
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>
+        <p>
+          {{pageFirstName}} {{pageLastName}}
+        </p>
+      </h1>
+      <img [src]="[pageUserPhoto]" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="fuck u">
+
+      <p><markdown [data]='pageUserDesc'></markdown></p>
+      <form (submit) = "makeAdmin(admin)">
+        <p *ngIf="(isAdmin == true)">
+          <a class="btn btn-secondary mr-sm-2" href="/account/{{pageUserId}}/edit" role="button">Edit profile</a>
+          <a class="btn btn-success" href="/project/{{pageUserId}}/new" role="button">Create project</a>
+          <button *ngIf="(pageIsAdmin == false)" (click)="handleClick($event)" id="make" type="button" class="btn btn-warning ml-sm-2">Make admin</button>
+          <button *ngIf="(pageIsAdmin == true)" (click)="handleClick($event)" id="undo" type="button" class="btn btn-danger ml-sm-2">Undo admin</button>
+        </p>
+      </form>
+
+      <br>
+    </div>
+    <app-profile-nav-card [inputProject] = "userProjects" [inputProject1] = "userDonates"></app-profile-nav-card>
+
+
+
+
+
+
+
+
+
+
+  </section>
+</main>

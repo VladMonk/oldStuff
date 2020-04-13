@@ -1,0 +1,20 @@
+<form class="" action="index.html" method="post">
+
+</form>
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <div class="text-center">
+        <form class="form-signin" (submit)="submitRegisterData()">
+          <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+          <input type="text" [(ngModel)]="firstname" name="firstname" id="inputFirstName" class="form-control" placeholder="First Name" required="" autofocus="">
+          <input type="text" [(ngModel)]="lastname" name="lastname" id="lastname" class="form-control" placeholder="Last Name" required="" autofocus="">
+          <input type="text" [(ngModel)]="email" name="email" id="email" class="form-control" placeholder="Email address" required="" autofocus="">
+          <input type="text" [(ngModel)]="password" name="password" id="password" class="form-control" placeholder="Password" required="">
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

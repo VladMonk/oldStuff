@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{FE2B3557-5716-46B9-8809-130AEC2E4483}|Default">
+  <MonoDevelop.Ide.ItemProperties.task06-modifiers PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="task06-modifiers/Program.cs">
+    <Files>
+      <File FileName="task06-modifiers/Program.cs" Line="38" Column="64" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

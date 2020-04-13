@@ -1,0 +1,5 @@
+/Users/home/Projects/task04-find-min-max/task04-find-min-max/bin/Debug/task04-find-min-max.exe
+/Users/home/Projects/task04-find-min-max/task04-find-min-max/bin/Debug/task04-find-min-max.pdb
+/Users/home/Projects/task04-find-min-max/task04-find-min-max/obj/Debug/task04-find-min-max.csprojAssemblyReference.cache
+/Users/home/Projects/task04-find-min-max/task04-find-min-max/obj/Debug/task04-find-min-max.exe
+/Users/home/Projects/task04-find-min-max/task04-find-min-max/obj/Debug/task04-find-min-max.pdb

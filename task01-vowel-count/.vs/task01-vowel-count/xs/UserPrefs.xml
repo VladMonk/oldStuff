@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{70173767-6E7F-4646-8CD6-2016787F759E}|Default">
+  <MonoDevelop.Ide.ItemProperties.task01-vowel-count PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="task01-vowel-count/Program.cs">
+    <Files>
+      <File FileName="task01-vowel-count/Program.cs" Line="17" Column="56" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="task01-vowel-count" expanded="True">
+            <Node name="task01-vowel-count" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,24 @@
+{
+  "name": "starfounder",
+  "version": "1.0.0",
+  "description": "Earn money dafak",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "hookah",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^7.0.1",
+    "mongoose": "^5.8.10",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}

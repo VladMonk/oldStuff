@@ -1,0 +1,5 @@
+/Users/home/Projects/task3/task3/bin/Debug/task3.exe
+/Users/home/Projects/task3/task3/bin/Debug/task3.pdb
+/Users/home/Projects/task3/task3/obj/Debug/task3.csprojAssemblyReference.cache
+/Users/home/Projects/task3/task3/obj/Debug/task3.exe
+/Users/home/Projects/task3/task3/obj/Debug/task3.pdb

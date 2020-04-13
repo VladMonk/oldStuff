@@ -1,0 +1,48 @@
+<app-header></app-header>
+<br><br>
+
+<main role="main">
+  <div class="container">
+    <section class="jumbotron text-left">
+      <h1><p>{{header}}</p></h1>
+      <markdown [data]='markdown'> </markdown>
+    </section>
+
+    <div id="projectScreenShotsCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img [src]="[prjctPhoto]" class="bd-placeholder-img" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+    <section class="jumbotron text-center">
+      <form (submit)="submitDonate()">
+        <div class="form-row align-items-center">
+          <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputGroupUsername">Cash</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+              </div>
+              <input type="text" class="form-control" [(ngModel)]="donatevalue" name="donatevalue" id="donatevalue" placeholder="Cash">
+            </div>
+          </div>
+          <div class="col-auto my-1">
+            <button class="btn btn-lg btn-warning btn-block" type="submit">Donate</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>

@@ -1,0 +1,17 @@
+<div class="card mb-4 shadow-sm">
+  <img [src]="[inputProject.companyDefImg]" class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" aria-label="Placeholder: Thumbnail">
+  <div class="card-body">
+    <p class="card-text">
+      {{inputProject.companyName}}
+    </p>
+    <h6>
+      <markdown [data]='inputProject.companyDesc.substring(0, 50) + "..."'></markdown>
+    </h6>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <a class="btn btn-sm btn-outline-secondary" href="/project/{{inputProject.companyOwner}}/{{inputProject._id}}" role="button">View</a>
+        <a *ngIf="((curUser.isAdmin == true) || (inputProject.companyOwner == curUser.currentUserId))" class="btn btn-sm btn-outline-secondary" href="/project/{{inputProject.companyOwner}}/{{inputProject._id}}/edit" role="button">Edit</a>
+      </div>
+    </div>
+  </div>
+</div>

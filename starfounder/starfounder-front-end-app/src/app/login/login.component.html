@@ -1,0 +1,22 @@
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <div class="text-center">
+        <form class="form-signin" (submit)="submitLoginData()">
+          <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>
+          <input type="text" [(ngModel)]="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+          <input type="text" [(ngModel)]="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+            <br>
+            <label for=""><a [routerLink]="['/auth/reg']">Don't have account?</a></label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+          <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,5 @@
+/Users/home/Projects/task06-modifiers/task06-modifiers/obj/Debug/task06-modifiers.csprojAssemblyReference.cache
+/Users/home/Projects/task06-modifiers/task06-modifiers/bin/Debug/task06-modifiers.exe
+/Users/home/Projects/task06-modifiers/task06-modifiers/bin/Debug/task06-modifiers.pdb
+/Users/home/Projects/task06-modifiers/task06-modifiers/obj/Debug/task06-modifiers.exe
+/Users/home/Projects/task06-modifiers/task06-modifiers/obj/Debug/task06-modifiers.pdb

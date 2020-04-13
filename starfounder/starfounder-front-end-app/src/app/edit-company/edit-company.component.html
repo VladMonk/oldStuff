@@ -1,0 +1,52 @@
+<app-header></app-header>
+<br><br><br><br>
+
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container" >
+      <form class="form-creatingproject" (submit)="submitProjectChange()">
+
+        <select class="custom-select">
+          <option selected>Select category</option>
+          <option value="1">Game</option>
+          <option value="2">Art</option>
+          <option value="3">Music</option>
+          <option value="3">Cinema</option>
+        </select>
+
+
+        <div class="form-group">
+          <label for="inputProjectName">Project name</label>
+          <input type="text" class="form-control" [(ngModel)]="projectname" name="projectname" id="inputProjectName" placeholder="Project Name">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Describe ur project</label>
+          <textarea class="form-control" [(ngModel)]="projectdescription" name="projectdescription" id="projectdescription" rows="15"></textarea>
+        </div>
+
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Choose image</label>
+        </div>
+
+        <div class="form-row align-items-center">
+          <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputGroupUsername">Cash</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+              </div>
+              <input type="text" class="form-control" [(ngModel)]="projectvalue" name="projectvalue" id="projectvalue" placeholder="Cash">
+            </div>
+          </div>
+          <div class="col-sm-12 my-1 mt-1">
+            <button class="btn btn-lg btn-success btn-block" type="submit">Save changes</button>
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+  </section>
+</main>

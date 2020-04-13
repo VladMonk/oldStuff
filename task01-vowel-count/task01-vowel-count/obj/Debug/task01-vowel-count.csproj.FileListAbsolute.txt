@@ -1,0 +1,5 @@
+/Users/home/Projects/task01-vowel-count/task01-vowel-count/bin/Debug/task01-vowel-count.exe
+/Users/home/Projects/task01-vowel-count/task01-vowel-count/bin/Debug/task01-vowel-count.pdb
+/Users/home/Projects/task01-vowel-count/task01-vowel-count/obj/Debug/task01-vowel-count.csprojAssemblyReference.cache
+/Users/home/Projects/task01-vowel-count/task01-vowel-count/obj/Debug/task01-vowel-count.exe
+/Users/home/Projects/task01-vowel-count/task01-vowel-count/obj/Debug/task01-vowel-count.pdb

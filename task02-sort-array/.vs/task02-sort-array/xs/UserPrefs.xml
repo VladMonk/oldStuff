@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{5183BD40-C13A-4A8F-AA12-5EB31F4D7565}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="task02-sort-array/Program.cs">
+    <Files>
+      <File FileName="task02-sort-array/Program.cs" Line="13" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="task02-sort-array" expanded="True">
+            <Node name="task02-sort-array" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.task02-sort-array PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
