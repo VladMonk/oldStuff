@@ -12,27 +12,19 @@ var mainVar = {
       [null, undefined]
     ]
   },
-  e: function e(){
-    console.log('Hi');
-  },
   NaN: NaN
 }
 
 var mainPrim = 5;
 
-function mainFunc(){
-  console.log('Priv');
-}
-
 var mainArr = [1,2,3];
 
-var secArr = [['uno',1],['do', 2]];
+var secArr = [['uno',1],['do', 2], 3];
 
 var thirdArr = [
   [],
   [['a', 'b', null],{a:'b'}],
   [{b:'a'},[]],
-  mainFunc,
   []
 ]
 
@@ -40,16 +32,23 @@ var thirdArr = [
 
 function deepCopy(obj){
 
-  let newObj = new Object()
+  let newObj
 
   if(Object.prototype.toString.call(obj) === '[object Object]'){
-    new Map(Object.entries(obj)).forEach((val, key)=>{
-      newObj[key] = val
-    });
+    let kostyil = new Object()
+    new Map(deepCopy(Object.entries(obj)))
+    .forEach((val, key) => {
+      kostyil[key] = val
+    })
+    newObj = kostyil
+  }
+  else if(Array.isArray(obj)){
+    newObj = obj.map((elem)=>{
+      return deepCopy(elem)
+    })
   }
   else{
-    newObj.key = obj
-    newObj = deepCopy(newObj).key
+    newObj = obj
   }
 
   return newObj
