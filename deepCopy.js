@@ -43,7 +43,7 @@ function deepCopy(obj){
     newObj = kostyil
   }
   else if(Array.isArray(obj)){
-    newObj = obj.map((elem)=>{
+    newObj = obj.map(elem=>{
       return deepCopy(elem)
     })
   }
@@ -53,3 +53,26 @@ function deepCopy(obj){
 
   return newObj
 }
+
+
+// function deepCopy(deepObj) {
+//
+//   let copyObj;
+//
+//   if (Array.isArray(deepObj)) {
+//     copyObj = [];
+//     for (let i = 0; i < deepObj.length; i++) {
+//       copyObj[i] = deepCopy(deepObj[i]);
+//     }
+//   }
+//   else if (Object.prototype.toString.call(deepObj) === '[object Object]') {
+//     copyObj = {};
+//     for (let key in deepObj) {
+//       copyObj[key] = deepCopy(deepObj[key]);
+//     }
+//   }
+//   else {
+//     copyObj = deepObj;
+//   }
+//   return copyObj;
+// }
