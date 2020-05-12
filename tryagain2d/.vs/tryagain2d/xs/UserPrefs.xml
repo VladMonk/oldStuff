@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{1327CA90-0D4C-A42D-8C39-E6BE58791716}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainControlLVL2.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CameraMovement.cs" Line="24" Column="37" />
+      <File FileName="Assets/Scripts/AlternativeCotrol.cs" />
+      <File FileName="Assets/Scripts/AlternativeTouch.cs" />
+      <File FileName="Assets/Scripts/HorizontalControl.cs" />
+      <File FileName="Assets/Scripts/KeyTrigger.cs" />
+      <File FileName="Assets/Scripts/TrapTrigger.cs" />
+      <File FileName="Assets/Scripts/MainJump.cs" />
+      <File FileName="Assets/Scripts/MainControl.cs" Line="13" Column="6" />
+      <File FileName="Assets/Scripts/MainControlLVL2.cs" Line="4" Column="35" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f4cc709e-9530-462d-bac1-5199be2bd24a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
